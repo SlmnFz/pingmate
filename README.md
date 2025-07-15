@@ -44,12 +44,23 @@ npm start
 
 ## 💬 Telegram Bot Commands
 
-| Command             | Description                          |
-|---------------------|--------------------------------------|
-| `/start`            | Start the bot                        |
-| `/add <name> <url>` | Add a URL to monitor                 |
-| `/remove <url>`     | Remove a URL from your list          |
-| `/list`             | Show your monitored URLs             |
+| Command             | Description                                    |
+|---------------------|-----------------------------------------------|
+| `/start`            | Start the bot and show welcome message        |
+| `/add <name> <url>` | Add a URL to monitor (supports HTTP/HTTPS)   |
+| `/list`             | Show monitored URLs with delete buttons      |
+| `/stats`            | View monitoring statistics and uptime data   |
+| `/status`           | Check current status of all monitored URLs   |
+| `/help`             | Show detailed help and usage examples        |
+
+## ✨ Features
+
+- **Interactive Management**: Delete URLs using inline buttons in `/list`
+- **Real-time Monitoring**: Instant notifications when sites go up/down
+- **Performance Tracking**: Response time measurement and statistics
+- **Uptime Analytics**: Track uptime percentage and average response times
+- **Smart Error Detection**: Categorized error messages (timeout, DNS, HTTP errors)
+- **User-friendly Interface**: Clean formatting with status emojis and timestamps
 
 ---
 
