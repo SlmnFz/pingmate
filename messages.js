@@ -17,6 +17,10 @@ export const messages = {
         languageSet: (lang) => `✅ Language set to ${lang === 'en' ? 'English' : 'Farsi'}`,
         invalidLanguage: '⚠️ Please use /language <en|fa>',
         toggled: (name, active) => `✅ ${name} is now ${active ? 'active' : 'inactive'}`,
+        up: (name, url, responseTime) =>
+            `✅ *${name}* is back *online!*\n🔗 ${url}\n⚡ Response time: ${responseTime}`,
+        down: (name, url, error) =>
+            `❌ *${name}* is *down!*\n🔗 ${url}\n⚠️ Error: ${error}`,
     },
     fa: {
         welcome: `👋 به PingMate خوش آمدید!\n\n🔍 *وب‌سایت‌های خود را 24/7 نظارت کنید*\n\n*دستورات موجود:*\n/add <نام> <آدرس> - افزودن وب‌سایت برای نظارت\n/list - نمایش تمام آدرس‌های تحت نظارت\n/stats - مشاهده آمار نظارت\n/status - بررسی وضعیت فعلی تمام آدرس‌ها\n/language <en|fa> - تنظیم زبان\n/help - نمایش این راهنما\n\n*مثال:*\n\`/add Google https://google.com\``,
@@ -35,5 +39,9 @@ export const messages = {
         languageSet: (lang) => `✅ زبان به ${lang === 'en' ? 'انگلیسی' : 'فارسی'} تنظیم شد`,
         invalidLanguage: '⚠️ لطفاً از /language <en|fa> استفاده کنید',
         toggled: (name, active) => `✅ ${name} اکنون ${active ? 'فعال' : 'غیرفعال'} است`,
+        up: (name, url, responseTime) =>
+            `✅ *${name}* دوباره *آنلاین* شد!\n🔗 ${url}\n⚡ زمان پاسخ: ${responseTime}`,
+        down: (name, url, error) =>
+            `❌ *${name}* *آفلاین* شده است!\n🔗 ${url}\n⚠️ خطا: ${error}`,
     }
 };
